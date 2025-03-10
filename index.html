@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicWeather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Rechercher une ville...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+            <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+        </div>
+
+        <div class="weather-container">
+            <div class="weather-info hidden" id="weather-info">
+                <div class="location-info">
+                    <h2 id="city"></h2>
+                    <p id="date"></p>
+                </div>
+                
+                <div class="main-weather">
+                    <div class="temp-container">
+                        <h1 id="temperature"></h1>
+                        <p id="feels-like"></p>
+                    </div>
+                    <div class="icon-container">
+                        <img id="weather-icon" src="" alt="Icône météo">
+                        <p id="weather-condition"></p>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <p>Vent</p>
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <div>
+                            <p>Humidité</p>
+                            <p id="humidity"></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <p>Visibilité</p>
+                            <p id="visibility"></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-sun"></i>
+                        <div>
+                            <p>UV</p>
+                            <p id="uv"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container" id="forecast-container">
+                <!-- Les prévisions météo seront ajoutées ici par JavaScript -->
+            </div>
+
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="error-container hidden" id="error-container">
+                <i class="fas fa-exclamation-circle"></i>
+                <p id="error-message">Ville introuvable. Veuillez réessayer.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>MagicWeather | Développé avec <i class="fas fa-heart"></i> | Propulsé par <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
