@@ -2,7 +2,8 @@
 
 A modern and interactive weather application created with HTML, CSS, and vanilla JavaScript. This application allows you to check the current weather and 7-day forecasts for any city in the world.
 
-![Screenshot of MagicWeather](https://i.ibb.co/Jj9Vt9F/magicweather-screenshot.jpg)
+![Screenshot of MagicWeather](https://github.com/user-attachments/assets/0f155efc-e652-4a2f-832a-045db0b749ba)
+
 
 ## Features
 
